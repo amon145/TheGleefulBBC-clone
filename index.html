@@ -40,7 +40,7 @@
 		
 		
 		#topbar {
-				background-color: #7A0000;
+				background: rgb(122, 0, 0);
 				width: 100%;
 				height: 50px;
 				color:#fff;
@@ -56,10 +56,10 @@
 		
 		#bbc-logo {
 			
-				padding-top: 17px;
+				padding-top: 20px;
 				float: left;
 				border-right: 1px solid #990000;
-				padding-right: 20px;
+				padding-right: 25px;
 			}
 		#sign-in {
 			font-weight: bold;
@@ -74,20 +74,21 @@
 			}
 		#sign-in img{
 				width:20px;
-				hight:5px;
+				hight:10px;
 				position: relative;
-				top:3px;
+				top:4px;
 			}
 			
 		#topmenu {
 				
 				float: left;
+				
 			
 		}
 		#topmenu ul{
 			margin-top: 5px;
 			margin: 0;
-				padding: 0;
+			padding: 0;
 			
 		}
 		#topmenu li{
@@ -116,6 +117,10 @@
 		#newsbar {
 				background-color: #990000;
 				width: 100%;
+				background-image: url("img/doge.jpg");
+				background-repeat: no-repeat;
+				background-position:  right center; 
+				background-size: 265px;
 				height: 100px;
 				color:#fff;
 			}
@@ -142,6 +147,12 @@
 				float: right ;
 				margin-top: 35px;
 			
+			}
+			
+			#RSS img {
+				position: absolute;
+				top: 88px;
+				right: 137px;
 			}
 			
 			#topicmenu {
@@ -177,7 +188,87 @@
 				padding-top: 5px !important;
 				
 			}
+			
+			#content{
+				width: 100%;
+				color: #705050;
+				font-size: 0.8em;
+			}
+			
+			h1 {
+					color: #1f4f82;
+					font-size: 2.2em;
+				
+				
+			}
+			
+			.headlineimg {
+					float: left;
+				
+				}
 		
+		.newsitems {
+				position: relative;
+				top: -10px;
+				left: 15px;
+				width: 300px;
+				font-size: 1.1em;
+				float: left;
+				
+		}
+		
+		.newsitems a {
+				color: #46b0ee;
+				text-decoration: none;
+			
+		}
+		
+		.newsitems a:hover {
+				color: #205b7e;
+				text-decoration: underline;
+				
+			}
+		.video {
+				background-image: url('img/go.png');
+				background-repeat: no-repeat;
+				background-position: left center;
+				padding-left: 20px;
+		}
+		
+		.sound {
+				background-image: url('img/sound.png');
+				background-repeat: no-repeat;
+				background-position: left center;
+				padding-left: 20px;
+		}
+		.links{
+				line-height: 0.8em;
+			
+			}
+			
+		#watch-listen {
+				background-color: #ededed;
+				float: right;
+				width: 400px;
+				position: relative;
+				top: -100px;
+				left: -80px;
+			}
+		#watch-listen p {
+				margin-left: 14px;
+				background-image: url('img/live.png');
+				background-repeat: no-repeat;
+				background-position: left center;
+				padding-left: 35px;
+				padding-top: 10px;
+			
+			}
+		h2 {
+				color: #505050 ;
+				margin: 10px 0 10px 14px;
+			
+			
+		}
 	</style>
 	
 		<div id="container">
@@ -215,7 +306,6 @@
 			</div>
 			<div class="break"></div>
 			<div id="newsbar">
-				
 				<div class="fixedwidth">
 					<p id="newsh">NEWS<span id="uk">UK</span></p>
 					<div id="RSS">RSS<img src="img/rss.png" /></div>
@@ -246,6 +336,32 @@
 				
 				</div>
 				
+				</div>
+				
+				<div id="content">
+					<div class="fixedwidth">
+					
+						<p>Made in the <strong>3rd of January</strong> Your feelings are with us.</p>
+						<h1>Pollution to spread across England</h1>
+						<img class="headlineimg"src="img/builds.png" />
+						<div class="newsitems">
+							<p>I live in Japan right now. And I can tell anyone from experiance that living in the country of your target language is not magic. You have to study just like you would back at home.</p>
+							<div class="links">
+							<p ><a class="video" href="#">Lorem ipsum dolor sit amet, consectetur.</a> </p>
+							<p ><a class="video" href="#">Lorem ipsum dolor sit amet, consectetur.</a> </p>
+							<p ><a class="video" href="#">Lorem ipsum dolor sit amet, consectetur.</a> </p>
+							<p ><a class="sound" href="#">Lorem ipsum dolor sit amet, consectetur.</a> </p>
+							</div>
+							
+							
+						</div>
+						
+					</div>
+				
+					<div id="watch-listen">
+						<h2>Watch and Listen</h2>
+						<p>BBC News Channel</p>
+					</div>
 				</div>
 				
 			</div>
